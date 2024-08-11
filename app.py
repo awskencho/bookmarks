@@ -1,15 +1,9 @@
 import streamlit as st
-import requests
-from streamlit_lottie import st_lottie
-from PIL import Image
 
+
+# Fine more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="SA KenCho Bookmarks", page_icon="😁", layout="wide")
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 
 
 # Use local CSS
@@ -20,8 +14,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # --- Load Assets ---
-lottie_coding = load_lottieurl("https://lottie.host/e112f601-0e38-4d3f-a86d-8f2772fe122a/bTvKxU0CHo.json")
-img_contact_form = Image.open("images/jordan.jpeg")
+#img_contact_form = Image.open("images/jordan.jpeg")
 
 with st.container():
     st.subheader("This is my quick bookmarks collection for work, mainly focus on GenAI, Container and AWS :wave:")
@@ -35,7 +28,7 @@ with st.container():
     left_column, right_column = st.columns(2)
     with left_column:
         st.header("What I do")
-        st.write("")
+        st.write("##")
         st.write(
             """
             On my YouTube channel I am creating tutorials on Python, AWS and GenAI
@@ -43,8 +36,6 @@ with st.container():
             """
         )
         st.write("[YouTube Channel >](https://youtube.com.hk)")
-    with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
 
 
 with st.container():
@@ -52,8 +43,7 @@ with st.container():
     st.header("My Projects")
     st.write("##")
     image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_contact_form)
+
     with text_column:
         st.subheader("Integrate Lottie Animations Insider your Streamlit App")
         st.write(
