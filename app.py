@@ -42,14 +42,14 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    text_column, text_column = st.columns((1, 2))
+    text1_column, text2_column = st.columns((1, 2))
 
-    with text_column:
+    with text1_column:
         st.subheader("Bedrock bookmakers")
         st.write("[Claude Prompt Engineering Overview >](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)")
         st.write("[Bedrock Claude Chat Repo >](https://github.com/aws-samples/bedrock-claude-chat?tab=readme-ov-file)")
 
-    with text_column:
+    with text2_column:
         st.subheader("Integrate Lottie Animations Insider your Streamlit App")
         st.write(
             """
