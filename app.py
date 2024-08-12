@@ -42,7 +42,7 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    text1_column, text2_column, text3_column = st.columns((1, 2, 3))
+    text1_column, text2_column, text3_column = st.columns((1, 1, 1))
 
     with text1_column:
         st.subheader("Bedrock bookmakers")
