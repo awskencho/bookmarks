@@ -46,7 +46,7 @@ with st.container():
 
     with text_column:
         st.subheader("Bedrock bookmakers")
-        st.write("[Claude Prompt Engineering Overview >](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview))")
+        st.write("[Claude Prompt Engineering Overview >](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)")
         st.write("[Bedrock Claude Chat Repo >](https://github.com/aws-samples/bedrock-claude-chat?tab=readme-ov-file)")
 
     with text_column:
