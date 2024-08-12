@@ -18,7 +18,7 @@ local_css("style/style.css")
 
 with st.container():
     st.subheader("This is my quick bookmarks collection for work, mainly focus on GenAI, Container and AWS :wave:")
-    st.title("Quick Bookmarks for seasoned Solutions Architect from AWS")
+    st.title("Quick Bookmarks for seasoned Solutions Architect in AWS")
     st.write("I am passionate about finding ways to learn Python coding, GenAI and AWS services")
     st.write("[Learn More >](https:/www.google.com)")
 
