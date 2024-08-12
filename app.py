@@ -42,7 +42,7 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    text1_column, text2_column = st.columns((1, 2))
+    text1_column, text2_column, text3_column = st.columns((1, 2, 3))
 
     with text1_column:
         st.subheader("Bedrock bookmakers")
@@ -50,12 +50,14 @@ with st.container():
         st.write("[Bedrock Claude Chat Repo >](https://github.com/aws-samples/bedrock-claude-chat?tab=readme-ov-file)")
 
     with text2_column:
-        st.subheader("Integrate Lottie Animations Insider your Streamlit App")
-        st.write(
-            """
-            Learn how to use Lottie Files in your Streamlit application and animate your application
-            """
-        )
-        st.markdown("[Watch Video...](XXXXXXXXXXXXXXXXXXXXXXXXXXXX)")
+        st.subheader("Bedrock bookmakers")
+        st.write("[Claude Prompt Engineering Overview >](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)")
+        st.write("[Bedrock Claude Chat Repo >](https://github.com/aws-samples/bedrock-claude-chat?tab=readme-ov-file)")
+
+    with text3_column:
+        st.subheader("Bedrock bookmakers")
+        st.write("[Claude Prompt Engineering Overview >](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)")
+        st.write("[Bedrock Claude Chat Repo >](https://github.com/aws-samples/bedrock-claude-chat?tab=readme-ov-file)")
+
 
 
